@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nikhil Kuckian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-500">NK</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="nav-link hover:text-blue-500 transition">Profile</a>
+                    <a href="#experience" class="nav-link hover:text-blue-500 transition">Experience</a>
+                    <a href="#skills" class="nav-link hover:text-blue-500 transition">Skills</a>
+                    <a href="#certifications" class="nav-link hover:text-blue-500 transition">Certifications</a>
+                    <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Contact Me</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#about" class="nav-link hover:text-blue-500 transition">Profile</a>
+                    <a href="#experience" class="nav-link hover:text-blue-500 transition">Experience</a>
+                    <a href="#skills" class="nav-link hover:text-blue-500 transition">Skills</a>
+                    <a href="#certifications" class="nav-link hover:text-blue-500 transition">Certifications</a>
+                    <a href="#contact" class="nav-link hover:text-blue-500 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 animate-fadeIn">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-500">Nikhil Kuckian</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">Builder | Engineer | Architect</h2>
+                    <p class="text-lg mb-8 text-gray-600 max-w-lg">
+                        Passionate about building scalable and reliable solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#experience" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition shadow-lg">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="border-2 border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-lg transition">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center animate-fadeIn delay-200">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-100 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl">
+                            <img src="Kuckian-Nikhil-DigitalPhoto.png" 
+                                 alt="Nikhil Kuckian" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white">
+                                    <i class="fas fa-code text-xl"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-bold">AWS Certified Solutions Architect Associate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="section-title animate-fadeIn">About <span class="text-blue-500">Me</span></h2>
+                <p class="section-subtitle animate-fadeIn delay-100">A brief introduction about my professional journey and expertise</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center animate-fadeIn delay-100">
+                    <div class="w-64 h-80 md:w-72 md:h-80 bg-blue-100 rounded-lg overflow-hidden shadow-lg">
+                        <img src="Kuckian-Nikhil-DigitalPhoto2.png" 
+                             alt="Nikhil Kuckian" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12 animate-fadeIn delay-200">
+                    <p class="text-gray-600 mb-6">
+• 15 years of experience in the IT industry, with a strong foundation in application management and operations <br>
+• AWS Certified Solutions Architect with practical knowledge of designing scalable, secure, and cost-effective cloud solutions <br>
+• Skilled in implementing CI/CD pipelines and adept with infrastructure as code (IaC) <br>
+• Strong understanding of DevOps practices, cloud security, and deployment automation in AWS ecosystems <br>
+• Committed to continuous learning and staying up to date with emerging technologies in cloud and DevOps <br>
+• Known for a proactive approach to problem-solving, cross-functional collaboration, and delivering results in fast-paced environments
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Automation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition flex items-center">
+                            <i class="fas fa-download mr-2"></i> Download CV
+                        </a>
+                        <a href="#contact" class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-2 rounded-lg transition">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section section-bg-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="section-title animate-fadeIn">Technical <span class="text-blue-500">Skills</span></h2>
+                <p class="section-subtitle animate-fadeIn delay-100">A comprehensive overview of my technical expertise across various domains</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <!-- Cloud & Infrastructure -->
+                <div class="skill-category bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Cloud & Infrastructure</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Windows</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Docker</span>
+                    </div>
+                </div>
+
+                <!-- Version Control & CI/CD -->
+                <div class="skill-category bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code-branch text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Version Control & CI/CD</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">Bitbucket</span>
+                        <span class="skill-badge">TFS</span>
+                        <span class="skill-badge">Jenkins</span>
+                        <span class="skill-badge">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <!-- Scripting & IaC -->
+                <div class="skill-category bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Scripting & IaC</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Bash</span>
+                        <span class="skill-badge">Shell</span>
+                        <span class="skill-badge">PowerShell</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">CloudFormation</span>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">PL/SQL</span>
+                    </div>
+                </div>
+
+                <!-- Observability & Monitoring -->
+                <div class="skill-category bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Observability & Monitoring</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Splunk</span>
+                        <span class="skill-badge">Dynatrace</span>
+                        <span class="skill-badge">ELK Stack</span>
+                        <span class="skill-badge">Pingdom</span>
+                        <span class="skill-badge">AppDynamics</span>
+                        <span class="skill-badge">SCOM</span>
+                        <span class="skill-badge">AWS CloudWatch</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Database</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Oracle</span>
+                        <span class="skill-badge">SQL Server</span>
+                        <span class="skill-badge">DynamoDB</span>
+                    </div>
+                </div>
+
+                <!-- Middleware -->
+                <div class="skill-category bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Middleware</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">MuleSoft</span>
+                        <span class="skill-badge">WebLogic</span>
+                        <span class="skill-badge">WebSphere</span>
+                        <span class="skill-badge">IBM MQ</span>
+                        <span class="skill-badge">JBoss</span>
+                        <span class="skill-badge">JRun</span>
+                        <span class="skill-badge">Tomcat</span>
+                        <span class="skill-badge">Microservices</span>
+                        <span class="skill-badge">AWS Serverless</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-bg-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="section-title animate-fadeIn">Professional <span class="text-blue-500">Experience</span></h2>
+                <p class="section-subtitle animate-fadeIn delay-100">A timeline of my professional journey, highlighting key roles, responsibilities, and achievements</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="experience-container">
+                    <!-- Experience Item 1 -->
+                    <div class="experience-item">
+                        <span class="experience-date">Oct 2022 - Present</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Senior Analyst</h3>
+                        <p class="text-blue-500 font-medium mb-4">Freedom Mobile Inc.</p>
+                        <div class="space-y-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Handled digital and enterprise applications hosted on AWS cloud, ensuring high availability and performance.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Built an internal site for AWS alarms dashboard with alarm management automation improving efficiency during scheduled deployments and downtime.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Implemented a docker containerized solution for login repo so that developers can spin up environment locally.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="experience-item">
+                        <span class="experience-date">Oct 2019 - Oct 2022</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Senior Analyst</h3>
+                        <p class="text-blue-500 font-medium mb-4">CAA Club Group</p>
+                        <div class="space-y-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Managed CAA web, integration, and insurance applications with a focus on maintenance and security.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Built a Jenkins-based one-click solution to install JVMs across 16 Linux servers, reducing setup time from days to minutes.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Upgraded DR environments to match production capacity and successfully used the setup during real downtime situation and DR drills.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="experience-item">
+                        <span class="experience-date">Sept 2018 - Jun 2019</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Deputy Manager</h3>
+                        <p class="text-blue-500 font-medium mb-4">IDFC First Bank</p>
+                        <div class="space-y-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Managed applications for the bank's digital and mobile banking platforms, ensuring 99.9% uptime.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Integrated collection applications between Capital First Ltd. and IDFC Bank, improving operational efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 4 -->
+                    <div class="experience-item">
+                        <span class="experience-date">Feb 2018 - Sept 2018</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Senior Associate</h3>
+                        <p class="text-blue-500 font-medium mb-4">Vara United (for ICICI Bank)</p>
+                        <div class="space-y-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Managed full systems life cycle of ICICI bank applications, ensuring high availability and performance.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Performed monitoring and alert configurations using Appnomics, AppDynamics, and Dynatrace.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 5 -->
+                    <div class="experience-item">
+                        <span class="experience-date">Oct 2014 - Feb 2018</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Deputy Manager</h3>
+                        <p class="text-blue-500 font-medium mb-4">HDFC Bank</p>
+                        <div class="space-y-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Maintained HDFC bank card application maintenance and security assessment.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Successfully conducted standby and DR drills for critical applications, ensuring business continuity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 6 -->
+                    <div class="experience-item">
+                        <span class="experience-date">Sept 2010 - Oct 2014</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Project Engineer</h3>
+                        <p class="text-blue-500 font-medium mb-4">Wipro Technologies (for Citi Group)</p>
+                        <div class="space-y-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Provided L1/L2 support for Citi's global banking applications, ensuring minimal downtime.</p>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-blue-500 mr-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Deployed Oracle, Sybase & SQL packages across test and production environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+    <!-- Education Section -->
+    <section id="Education" class="section section-bg-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="section-title animate-fadeIn">Educational <span class="text-blue-500">Background</span></h2>
+            </div>               
+            <div class="grid grid-cols-1 gap-6">
+                        <!-- Education Card 1 -->
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-content">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-bold text-gray-800">Master of Computer Applications (MCA)</h4>
+                                    <span class="bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">2007 - 2010</span>
+                                </div>
+                                <p class="text-blue-500 font-medium mt-1">University of Mumbai</p>
+                                <p class="text-gray-600 mt-3">Specialized in Software Development and Database Management Systems with a strong focus on modern programming paradigms and system design.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Software Engineering</span>
+                                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Database Design</span>
+                                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Web Technologies</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education Card 2 -->
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-content">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-bold text-gray-800">Bachelor of Science (B.Sc.) in Computer Science</h4>
+                                    <span class="bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">2004 - 2007</span>
+                                </div>
+                                <p class="text-blue-500 font-medium mt-1">University of Mumbai</p>
+                                <p class="text-gray-600 mt-3">Focused on core Computer Science fundamentals, programming concepts, and problem-solving methodologies.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Data Structures</span>
+                                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Algorithms</span>
+                                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Computer Networks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-bg-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="section-title animate-fadeIn">Technical <span class="text-blue-500">Certifications</span></h2>
+                <p class="section-subtitle animate-fadeIn delay-100">Validated credentials that demonstrate my expertise and commitment to professional development</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- AWS Solution Architect Associate -->
+                <div class="certification-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">AWS Certified Solutions Architect – Associate</h3>
+                            <p class="text-gray-600 mb-4">Validates the ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS.</p>
+                            <a href="https://www.credly.com/badges/dd1df8c3-e67e-49e2-aaa4-326a166dd50a/public_url" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="text-blue-500 hover:text-blue-600 font-medium inline-flex items-center">
+                                View Credential <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Microsoft Certified: Azure Fundamentals -->
+                <div class="certification-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Microsoft Certified: Azure Fundamentals</h3>
+                            <p class="text-gray-600 mb-4">Demonstrates foundational knowledge of cloud concepts and how they're implemented in Microsoft Azure.</p>
+                            <a href="https://www.credly.com/badges/13ebb69d-b5d9-4552-a9ba-5c121dde70b0/public_url" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="text-blue-500 hover:text-blue-600 font-medium inline-flex items-center">
+                                View Credential <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Oracle Database 10g Administrator Certified Professional -->
+                <div class="certification-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Oracle Database 10g Administrator Certified Professional</h3>
+                            <p class="text-gray-600 mb-4">(OCP) certification, now retired, demonstrated a strong expertise in Oracle Database 10g, including skills in managing database availability, and performance management.</p>
+                            <a href="https://www.credly.com/badges/134a665d-4bb6-44d2-8c57-872a0262e5cf/public_url" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="text-blue-500 hover:text-blue-600 font-medium inline-flex items-center">
+                                View Credential <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Oracle Database SQL Certified Expert -->
+                <div class="certification-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Oracle Database SQL Certified Expert</h3>
+                            <p class="text-gray-600 mb-4">Validates an individual's advanced proficiency in working with the SQL programming language within the Oracle Database environment.</p>
+                            <a href="https://www.credly.com/badges/134a665d-4bb6-44d2-8c57-872a0262e5cf/public_url" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="text-blue-500 hover:text-blue-600 font-medium inline-flex items-center">
+                                View Credential <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-bg-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="section-title animate-fadeIn">Get In <span class="text-blue-500">Touch</span></h2>
+                <p class="section-subtitle animate-fadeIn delay-100">Want to discuss potential opportunities? Feel free to reach out!</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mt-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Left Column: Contact Information -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                            
+                            <!-- Email -->
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <a href="mailto:nikhilkuckian@gmail.com" class="text-gray-600 hover:text-blue-500 transition">
+                                        nikhilkuckian@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Phone</h4>
+                                    <a href="tel:+14169381880" class="text-gray-600 hover:text-blue-500 transition">
+                                        +1 (416) 938-1880
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Location</h4>
+                                    <p class="text-gray-600">Greater Toronto Area, Canada</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column: Social Media -->
+                        <div class="border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8">
+                            <div class="text-center md:text-left">
+                                <span class="inline-block text-blue-500 font-medium mb-2">Let's Connect</span>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Find Me On</h3>
+                                <p class="text-gray-600 mb-6 max-w-md">I'm active on these platforms. Feel free to reach out or follow my work!</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/nikhil-kuckian/" target="_blank" rel="noopener noreferrer" 
+                                   class="group flex items-center p-4 rounded-xl border border-gray-200 hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                                    <div class="bg-blue-100 group-hover:bg-blue-500 p-3 rounded-lg mr-4 transition-colors duration-300">
+                                        <i class="fab fa-linkedin-in text-blue-500 group-hover:text-white text-xl"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">LinkedIn</h4>
+                                        <p class="text-sm text-gray-500 group-hover:text-gray-600">Business Network</p>
+                                    </div>
+                                </a>
+                                
+                                <!-- GitHub -->
+                                <a href="https://github.com/nikhilkuckian" target="_blank" rel="noopener noreferrer" 
+                                   class="group flex items-center p-4 rounded-xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                                    <div class="bg-blue-100 group-hover:bg-blue-500 p-3 rounded-lg mr-4 transition-colors duration-300">
+                                        <i class="fab fa-github text-blue-500 group-hover:text-white text-xl"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">GitHub</h4>
+                                        <p class="text-sm text-gray-500 group-hover:text-gray-600">Code & Projects</p>
+                                    </div>
+                                </a>
+                                
+                                <!-- Twitter/X -->
+                                <a href="https://x.com/nikhil_kuckian" target="_blank" rel="noopener noreferrer" 
+                                   class="group flex items-center p-4 rounded-xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                                    <div class="bg-blue-100 group-hover:bg-blue-500 p-3 rounded-lg mr-4 transition-colors duration-300">
+                                        <i class="fab fa-x text-blue-500 group-hover:text-white text-xl"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">Twitter</h4>
+                                        <p class="text-sm text-gray-500 group-hover:text-gray-600">Thoughts & Updates</p>
+                                    </div>
+                                </a>
+                                
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/nikhilkuckian/" target="_blank" rel="noopener noreferrer" 
+                                   class="group flex items-center p-4 rounded-xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                                    <div class="bg-blue-100 group-hover:bg-blue-500 p-3 rounded-lg mr-4 transition-colors duration-300">
+                                        <i class="fab fa-instagram text-blue-500 group-hover:text-white text-xl"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">Instagram</h4>
+                                        <p class="text-sm text-gray-500 group-hover:text-gray-600">Personal Moments</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">Nikhil Kuckian</h3>
+                    <p class="max-w-xs text-gray-400">
+                        Seasoned AWS-certified IT professional with deep DevOps expertise and a strong track record in cloud, automation, and application operations.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                            <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>                   
+                 
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                        <div class="flex space-x-4 mb-4">
+                            <a href="https://github.com/nikhilkuckian" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nikhil-kuckian/" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://x.com/nikhil_kuckian" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-x text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/nikhilkuckian/" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400">nikhilkuckian@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Nikhil Kuckian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>  
+    <script src="script.js"></script>
+</body>
+</html>
